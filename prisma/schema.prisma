@@ -1,0 +1,38 @@
+// docs: https://pris.ly/d/prisma-schema
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model AppMeta {
+  id           Int        @id @default(autoincrement())
+  app_id       String     @unique
+  app_name     String     @db.VarChar(100)
+  app_platform String     @db.VarChar(50)
+  app_package  String     @db.VarChar(255)
+  app_api_key  String     @db.VarChar(255)
+  project      ProjectApp @relation(fields: [project_id], references: [id])
+  project_id   Int
+  app_version  Version?
+  published    Boolean    @default(false)
+  publish_code String     @db.VarChar(255)
+  created_at   DateTime   @default(now())
+  updated_at   DateTime   @updatedAt
+}
+
+model ProjectApp {
+  id           Int    @id @default(autoincrement())
+  project_name String @db.VarChar(255)
+  service_account Json?
+  apps            AppMeta[]
+}
+
+enum Version {
+  V4
+  V5
+}

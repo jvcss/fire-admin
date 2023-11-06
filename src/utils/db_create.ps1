@@ -1,0 +1,1 @@
+docker exec -it smart-v5-postgres createdb -U postgres -W publisher
