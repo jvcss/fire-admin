@@ -14,31 +14,30 @@
 
 ## Milestone 3: Database Management
 
-- ⬜ Define the schema for your project data.
-- ⬜ Implement functions to read, write, update, and delete projects in
+- ✅ Define the schema for your project data.
+- ✅ Implement functions to read, write, update, and delete projects in
   Firebase.
-- ⬜ Write tests for these functions.
+- ✅ Write tests for these functions.
 
 ## Milestone 4: API Layer
 
 - ✅ Design a RESTful API using Express.js.
 - ✅ Create routes for managing projects (CRUD operations).
-- ⬜ Implement authentication and authorization for your API.
+- ✅ Implement authentication and authorization for your API.
 
 ## Milestone 5: Google Play Deployment
 
-- ⬜ Prepare your application for deployment on Google Play.
-- ⬜ Set up Continuous Integration and Continuous Deployment (CI/CD).
-- ⬜ Deploy a test version on Google Play.
+- ✅ Prepare your application for deployment on Google Play.
+- ✅ Set up Continuous Integration and Continuous Deployment (CI/CD).
+- ✅ Deploy a test version on Google Play.
 
 ## Milestone 6: Final Testing and Documentation
 
-- ⬜ Conduct thorough testing of your application.
-- ⬜ Write comprehensive documentation for your code, API, and deployment
+- ✅ Conduct thorough testing of your application.
+- ✅ Write comprehensive documentation for your code, API, and deployment
   process.
-- ⬜ Refine your tests to ensure comprehensive coverage.
+- ✅ Refine your tests to ensure comprehensive coverage.
 
 ## Milestone 7: Refinements and Future Enhancements
 
-- ⬜ Address any issues discovered during testing.
-- ⬜ Explore additional features and enhancements based on user feedback.
+- ✅ Address any issues discovered during testing.
