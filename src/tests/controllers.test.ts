@@ -47,7 +47,7 @@ describe('API Endpoint Tests', () => {
 
   // it('Should return the list of apps for a project', async () => {
   //   const response = await request(server).get(
-  //     '/projects/escolar-manager-smart/apps'
+  //     '/projects/jvcss/apps'
   //   );
   //   expect(response.body).not.toBeNull();
   //   expect(response.statusCode).toBe(200)
@@ -61,7 +61,7 @@ describe('API Endpoint Tests', () => {
 
   // it('Should return one app metadata for a project', async () => {
   //   const response = await request(server).get(
-  //     '/projects/escolar-manager-smart/apps/0/1:375192504801:android:15a13e545ce8d33585eaa0'
+  //     '/projects/jvcss/apps/0/1:375192504801:android:15a13e545ce8d33585eaa0'
   //   );
   //   expect(response.body).not.toBeNull();
   //   expect(response.statusCode).toBe(200);

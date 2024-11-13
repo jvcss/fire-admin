@@ -13,7 +13,7 @@ function getFirebaseAdminForProject(projectId: string) {
   let serviceAccountPath =
     process.env.FIREBASE_ACCOUNT_SERVICE_PATH != null
       ? `${process.env.FIREBASE_ACCOUNT_SERVICE_PATH}\\${projectId}.json`
-      : `C:\\EscolarManager\\Dados\\AppsCred\\${projectId}.json`;
+      : `C:\\JVCSS\\Dados\\AppsCred\\${projectId}.json`;
 
   // Check if the file exists and is a valid JSON file
   if (!fs.existsSync(serviceAccountPath)) {
@@ -34,6 +34,6 @@ function getFirebaseAdminForProject(projectId: string) {
 
 const serviceAccountPath =
   process.env.FIREBASE_ACCOUNT_SERVICE_PATH ||
-  'C:\\EscolarManager\\Dados\\AppsCred\\';
+  'C:\\JVCSS\\Dados\\AppsCred\\';
 
 export { getFirebaseAdminForProject, serviceAccountPath };
